@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   /*Se respeta el tamaño de las cajas e impide que crezcan si se les agrega padding o border*/
-  box-sizing: border-box;
   /*background-color: rgb(20, 15, 20);
   color: rgb(219, 155, 58);
   font-family: "Nunito", sans-serif;*/
@@ -15,58 +14,26 @@ color: rgba(39, 39, 39, 0.925);
       background-color: rgb(255, 152, 0);
        text-decoration: none;*/
      
-       .estiloHeader{
-        background-color: aqua;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        .estiloDivHeader{
-          display: flex;
-          justify-content: space-between;
-          width: 90%;
-          margin: 0 auto;
-          .estiloLogo{
-            background-color: blueviolet;
-          }
-          .estiloNav{
-            background-color: red;
-            .estiloListaNav{
-              display: flex;
-              list-style: none;
-              height: 100%;
-              background-color: rgb(20, 15, 20);
-              .estiloAnclaNav{
-                color: rgb(255, 152, 0);
-                text-decoration: none;
-                margin-left: 15px;
-                font-size: 1rem;
-              }
-            }
-          }
-        }
+.estiloHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  .estiloNav{
+    .estiloListaNav{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      .estiloAnclaNav{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
       }
-      
-      .estiloMain{
-        .estiloH1{
-          background-color: rosybrown;
-        }
-        .estiloDivMain{
-          display: flex;
-          justify-content: center;
-        }
-        .estiloSectionMain{
-          background-color: royalblue;
-        }
-      }
-      
-      .estiloFooter{
-        .estiloDivFooter{
-          background-color: red;
-          .estilolistaFooter{
-            background-color: blueviolet;
-            .estiloAnclaFooter{
-              display: flex;
-              text-decoration: none;
-            }
-          }
-        }
-      }
+    }
+  }
+}
+
+body {
+  background-color: rgba(39, 39, 39, 0.925);
+  color: rgb(255, 152, 0);
+  font-family: "Nunito", sans-serif;
+}
